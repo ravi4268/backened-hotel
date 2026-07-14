@@ -1,63 +1,18 @@
 const express = require("express");
-
 const router = express.Router();
 
-
 const {
-
 createMediaGallery,
 getMediaGalleries,
 getMediaGalleryById,
 updateMediaGallery,
 deleteMediaGallery
 
-}=require("../controllers/mediaGalleryController");
+} = require('../controllers/mediagalleryController')
 
-
-
-// CREATE
-
-router.post(
-"/",
-createMediaGallery
-);
-
-
-
-// GET ALL
-
-router.get(
-"/",
-getMediaGalleries
-);
-
-
-
-// GET BY ID
-
-router.get(
-"/:id",
-getMediaGalleryById
-);
-
-
-
-// UPDATE
-
-router.put(
-"/:id",
-updateMediaGallery
-);
-
-
-
-// DELETE
-
-router.delete(
-"/:id",
-deleteMediaGallery
-);
-
-
-
+router.post("/",createMediaGallery);
+router.get("/",getMediaGalleries);
+router.get("/:id",getMediaGalleryById);
+router.put("/:id",updateMediaGallery);
+router.delete("/:id",deleteMediaGallery);
 module.exports = router;

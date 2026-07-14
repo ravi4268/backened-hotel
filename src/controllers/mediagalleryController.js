@@ -58,12 +58,6 @@ const getMediaGalleries = async (req,res)=>{
 
 };
 
-
-
-
-
-// GET BY ID
-
 const getMediaGalleryById = async(req,res)=>{
 
 try{
@@ -107,13 +101,6 @@ message:error.message
 }
 
 };
-
-
-
-
-
-
-// UPDATE
 
 const updateMediaGallery = async(req,res)=>{
 
@@ -202,19 +189,10 @@ message:error.message
 
 };
 
-
-
-
 module.exports={
-
 createMediaGallery,
-
 getMediaGalleries,
-
 getMediaGalleryById,
-
 updateMediaGallery,
-
 deleteMediaGallery
-
 };

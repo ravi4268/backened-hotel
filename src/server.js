@@ -10,7 +10,7 @@ const contactRoutes = require("./routes/contact");
 const galleryRoutes = require("./routes/mediagallery");
 const ratingRoutes = require("./routes/rating");
 const locationRoutes = require("./routes/hotellocation");
-const pickDropRoutes = require("./routes/pickdrop");git status
+const pickDropRoutes = require("./routes/pickdrop"); 
 const gamePlaceRoutes = require("./routes/game");
 
 // ✅ Rooftop Routes Import
